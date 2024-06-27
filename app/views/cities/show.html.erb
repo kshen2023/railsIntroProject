@@ -1,0 +1,15 @@
+<!-- app/views/cities/show.html.erb -->
+<h1><%= @city.city_name %></h1>
+
+<ul>
+  <li><strong>Country:</strong> <%= @country.country_name %></li>
+</ul>
+
+<h2>Races</h2>
+<ul>
+  <% @races.each do |race| %>
+    <li><%= race.race_name %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back', cities_path %>

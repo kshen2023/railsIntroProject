@@ -4,7 +4,20 @@
 <ul>
   <li><strong>Continent:</strong> <%= @country.continent %></li>
   <li><strong>Population:</strong> <%= @country.population %></li>
-  <!-- Add other attributes as needed -->
+</ul>
+
+<h2>Cities</h2>
+<ul>
+  <% @cities.each do |city| %>
+    <li><%= city.city_name %></li>
+  <% end %>
+</ul>
+
+<h2>Languages</h2>
+<ul>
+  <% @languages.each do |language| %>
+    <li><%= language.language_name %></li>
+  <% end %>
 </ul>
 
 <%= link_to 'Back', countries_path %>

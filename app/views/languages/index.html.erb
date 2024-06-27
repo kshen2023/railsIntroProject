@@ -3,6 +3,6 @@
 
 <ul>
   <% @languages.each do |language| %>
-    <li><%= language.language_name %></li>
+      <td><%= link_to language.language_name, language_path(language) %></td>
   <% end %>
 </ul>

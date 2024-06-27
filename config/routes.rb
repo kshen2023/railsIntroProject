@@ -24,4 +24,8 @@ Rails.application.routes.draw do
   resources :races, only: [:index]
 
   resources :countries
+  resources :cities
+  resources :languages
+  resources :races
+
 end

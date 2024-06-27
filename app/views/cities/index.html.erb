@@ -11,7 +11,8 @@
   <tbody>
     <% @cities.each do |city| %>
       <tr>
-        <td><%= city.city_name %></td>
+       
+          <td><%= link_to city.city_name, city_path(city) %></td>
         <td><%= city.country.country_name %></td>
       </tr>
     <% end %>

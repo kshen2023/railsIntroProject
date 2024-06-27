@@ -1,0 +1,11 @@
+<!-- app/views/languages/show.html.erb -->
+<h1><%= @language.language_name %></h1>
+
+<h2>Countries</h2>
+<ul>
+  <% @countries.each do |country| %>
+    <li><%= country.country_name %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back', languages_path %>

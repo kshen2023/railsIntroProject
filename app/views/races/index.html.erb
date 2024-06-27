@@ -3,6 +3,6 @@
 
 <ul>
   <% @races.each do |race| %>
-    <li><%= race.race_name %></li>
+  <td><%= link_to race.race_name, race_path(race) %></td>
   <% end %>
 </ul>

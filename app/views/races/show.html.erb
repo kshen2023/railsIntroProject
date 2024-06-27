@@ -1,0 +1,11 @@
+<!-- app/views/races/show.html.erb -->
+<h1><%= @race.race_name %></h1>
+
+<h2>Cities</h2>
+<ul>
+  <% @cities.each do |city| %>
+    <li><%= city.city_name %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back', races_path %>
