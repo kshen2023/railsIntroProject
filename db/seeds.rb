@@ -19,47 +19,31 @@ end
 # Seed Countries from CSV
 country_data = load_csv_data(Rails.root.join('db', 'seeds', 'countries.csv'))
 country_data.each do |row|
-  # Check if country with the same name already exists
-  unless Country.exists?(country_name: row['country_name'])
-    Country.create!(
-      country_name: row['country_name'],
-      continent: row['continent'],
-      population: row['population']
-    )
-  end
+  Country.create!(
+    country_name: row['country_name'],
+    continent: row['continent'],
+    population: row['population']
+  )
 end
 
 # Seed Cities from CSV
 city_data = load_csv_data(Rails.root.join('db', 'seeds', 'cities.csv'))
 city_data.each do |row|
-  # Check if city with the same name and country already exists
   country = Country.find_by(country_name: row['country_name'])
-  unless City.exists?(city_name: row['city_name'], country: country)
-    City.create!(
-      city_name: row['city_name'],
-      country: country
-    )
-  end
+  City.create!(
+    city_name: row['city_name'],
+    country: country
+  )
 end
 
-# Seed Languages with Faker (ensure unique language names)
-languages_created = []
+# Seed Languages with Faker
 10.times do
-  language_name = Faker::Nation.language
-  unless Language.exists?(language_name: language_name)
-    Language.create!(language_name: language_name)
-    languages_created << language_name
-  end
+  Language.create!(language_name: Faker::Nation.language)
 end
 
-# Seed Races with Faker (ensure unique race names)
-races_created = []
+# Seed Races with Faker
 10.times do
-  race_name = Faker::Demographic.race
-  unless Race.exists?(race_name: race_name)
-    Race.create!(race_name: race_name)
-    races_created << race_name
-  end
+  Race.create!(race_name: Faker::Demographic.race)
 end
 
 # Seed CountryLanguages with Faker
