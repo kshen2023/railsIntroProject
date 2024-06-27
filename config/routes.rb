@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   resources :cities, only: [:index]
   resources :languages, only: [:index]
   resources :races, only: [:index]
+
+  resources :countries
 end

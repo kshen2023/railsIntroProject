@@ -1,0 +1,10 @@
+<!-- app/views/countries/show.html.erb -->
+<h1><%= @country.country_name %></h1>
+
+<ul>
+  <li><strong>Continent:</strong> <%= @country.continent %></li>
+  <li><strong>Population:</strong> <%= @country.population %></li>
+  <!-- Add other attributes as needed -->
+</ul>
+
+<%= link_to 'Back', countries_path %>

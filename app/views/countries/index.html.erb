@@ -12,7 +12,7 @@
   <tbody>
     <% @countries.each do |country| %>
       <tr>
-        <td><%= country.country_name %></td>
+         <td><%= link_to country.country_name, country_path(country) %></td>
         <td><%= country.continent %></td>
         <td><%= country.population %></td>
       </tr>
