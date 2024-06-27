@@ -4,7 +4,7 @@
 <h2>Cities</h2>
 <ul>
   <% @cities.each do |city| %>
-    <li><%= city.city_name %></li>
+   <li><%= link_to city.city_name, city_path(city) %></li>
   <% end %>
 </ul>
 

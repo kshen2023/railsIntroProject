@@ -2,13 +2,13 @@
 <h1><%= @city.city_name %></h1>
 
 <ul>
-  <li><strong>Country:</strong> <%= @country.country_name %></li>
+  <li><strong>Country:</strong> <%= link_to @city.country.country_name, country_path(@city.country) %></li>
 </ul>
 
 <h2>Races</h2>
 <ul>
   <% @races.each do |race| %>
-    <li><%= race.race_name %></li>
+      <li><%= link_to race.race_name, race_path(race) %></li>
   <% end %>
 </ul>
 
