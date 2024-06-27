@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'races/index'
+  get 'languages/index'
+  get 'cities/index'
   get 'about/about'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -14,4 +17,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'  # Replace 'pages#home' with your actual controller and action for the homepage
   get 'about', to: 'pages#about'  # Replace 'pages#about' with your actual controller and action for the about page
   # Define other routes as needed
+  #
+  resources :countries, only: [:index]
+  resources :cities, only: [:index]
+  resources :languages, only: [:index]
+  resources :races, only: [:index]
 end

@@ -1,0 +1,21 @@
+<!-- app/views/countries/index.html.erb -->
+<h1>List of Countries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Country Name</th>
+      <th>Continent</th>
+      <th>Population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @countries.each do |country| %>
+      <tr>
+        <td><%= country.country_name %></td>
+        <td><%= country.continent %></td>
+        <td><%= country.population %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

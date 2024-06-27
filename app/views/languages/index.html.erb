@@ -1,0 +1,8 @@
+<!-- app/views/languages/index.html.erb -->
+<h1>List of Languages</h1>
+
+<ul>
+  <% @languages.each do |language| %>
+    <li><%= language.language_name %></li>
+  <% end %>
+</ul>
