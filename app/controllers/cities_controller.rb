@@ -1,6 +1,6 @@
 class CitiesController < ApplicationController
   def index
-    @cities = City.all
+    @cities = City.order(:city_name).page(params[:page]).per(10)
   end
   def show
     @city = City.find(params[:id])
