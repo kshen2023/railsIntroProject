@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   get '/about', to: 'about#about'
   # Defines the root path route ("/")
   # root "posts#index"
+  #
+  root to: 'pages#home'  # Replace 'pages#home' with your actual controller and action for the homepage
+  get 'about', to: 'pages#about'  # Replace 'pages#about' with your actual controller and action for the about page
+  # Define other routes as needed
 end

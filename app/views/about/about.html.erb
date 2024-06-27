@@ -1,24 +1,39 @@
-<!-- app/views/about/about.html.erb -->
-<h1>About</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Sources of the Project</title>
+  <!-- Add any additional meta tags, stylesheets, or scripts here -->
+</head>
+<body>
+  <h1>Data Sources of the Project</h1>
 
-<h2>Data Sources</h2>
-<p>
-  This page provides information about our data sources and the structure of our application's database.
-</p>
+  <p>There are 2 data sources used in this project:</p>
 
-<h3>Tables Overview</h3>
+  <ol>
+    <li>
+      <strong>cities.csv</strong>
+      <ul>
+        <li><strong>Fields:</strong> city_name, country_name</li>
+        <li><strong>Description:</strong> Contains information about cities including their names and respective countries.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>countries.csv</strong>
+      <ul>
+        <li><strong>Fields:</strong> country_name, continent, population</li>
+        <li><strong>Description:</strong> Provides details about countries such as their names, continents, and populations.</li>
+      </ul>
+    </li>
+  </ol>
 
-<h4>Country Table</h4>
-<ul>
-  <li>Primary Key: country_id</li>
-  <li>Attributes:
-    <ul>
-      <li>country_name: Name of the country</li>
-      <li>continent: Continent where the country is located</li>
-      <li>population: Population of the country</li>
-    </ul>
-  </li>
-</ul>
+  <p>In addition to the CSV files, Faker gem is used to generate synthetic data for other aspects of the project.</p>
+
+  <!-- Optionally, you can include additional sections or details about the project's data sources -->
+
+</body>
+</html>
 
 <!-- Add similar sections for other tables (City, Language, Race, etc.) -->
 
