@@ -1,15 +1,12 @@
-<%= form_with url: search_cities_path, method: :get, local: true do %>
-  <%= label_tag :search, "Search Cities:" %>
-  <%= text_field_tag :search, params[:search] %>
-  <%= submit_tag "Search" %>
-<% end %>
+<!-- app/views/cities/search_results.html.erb -->
+
+<h1>Search Results for "<%= @search_term %>"</h1>
 
 <table>
   <thead>
     <tr>
       <th>City Name</th>
       <th>Country</th>
-      <th>Population</th>
     </tr>
   </thead>
   <tbody>
@@ -17,10 +14,9 @@
       <tr>
         <td><%= link_to city.city_name, city_path(city) %></td>
         <td><%= city.country.country_name %></td>
-      
       </tr>
     <% end %>
   </tbody>
 </table>
 
-
+<%= paginate @cities %>
