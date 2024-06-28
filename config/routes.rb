@@ -13,10 +13,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root to: 'pages#home'  # Replace 'pages#home' with your actual controller and action for the homepage
+#  root 'home#index'
+  get 'search', to: 'pages#search'
 
   # Define other routes as needed
   get 'about', to: 'pages#about'  # Replace 'pages#about' with your actual controller and action for the about page
-  resources :cities do
+   resources :cities do
     collection do
       get 'search'
     end

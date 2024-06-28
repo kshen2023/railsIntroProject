@@ -1,0 +1,14 @@
+<!-- app/views/home/search_results.html.erb -->
+<h1>Search Results for "<%= @search_term %>" in <%= @scope %></h1>
+
+<% if @results.any? %>
+  <ul>
+    <% @results.each do |result| %>
+      <li><%= link_to result.name, polymorphic_path(result) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No results found.</p>
+<% end %>
+
+<%= link_to 'Back', root_path %>

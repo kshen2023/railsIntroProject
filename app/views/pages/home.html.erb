@@ -1,2 +1,9 @@
 <h1>Home Page</h1>
 <p><%= @welcome_message %></p>
+<h1>Search Across Models</h1>
+
+<%= form_tag(search_path, method: :get) do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search by name" %>
+  <%= select_tag :scope, options_for_select(['All', 'Countries', 'Cities', 'Languages', 'Races'], params[:scope]) %>
+  <%= submit_tag "Search" %>
+<% end %>
