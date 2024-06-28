@@ -4,4 +4,5 @@ class City < ApplicationRecord
 
   validates :city_name, presence: true
   validates :country, presence: true
+  validates :city_area, presence: true
 end

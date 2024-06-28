@@ -32,18 +32,30 @@ city_data.each do |row|
   country = Country.find_by(country_name: row['country_name'])
   City.create!(
     city_name: row['city_name'],
+    city_area: row['city_area'],
     country: country
   )
 end
 
 # Seed Languages with Faker
 10.times do
-  Language.create!(language_name: Faker::Nation.language)
-end
+  language_code = Faker::Nation.language
+  language_code = 'en' if language_code.blank?  # 处理语言代码为空的情况，或者使用其他默认值
 
+  Language.create!(
+    language_name: Faker::Nation.language,
+    language_code: language_code
+  )
+end
 # Seed Races with Faker
 10.times do
-  Race.create!(race_name: Faker::Demographic.race)
+  race_name = Faker::Demographic.race
+  race_population = Faker::Number.within(range: 10000..1000000)  # 用于模拟种族人口的随机数值
+
+  Race.create!(
+    race_name: race_name,
+    race_population: race_population
+  )
 end
 
 # Seed CountryLanguages with Faker

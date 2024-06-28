@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_27_023116) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_28_220959) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -70,6 +70,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_27_023116) do
     t.integer "country_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "latitude"
+    t.float "longitude"
+    t.float "city_area"
     t.index ["country_id"], name: "index_cities_on_country_id"
   end
 
@@ -115,6 +118,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_27_023116) do
     t.string "language_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "language_code"
   end
 
   create_table "pets", force: :cascade do |t|
@@ -129,6 +133,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_27_023116) do
     t.string "race_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "race_population"
   end
 
   create_table "weathers", force: :cascade do |t|

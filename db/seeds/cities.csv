@@ -1,81 +1,81 @@
-city_name,country_name
-New York,USA
-Los Angeles,USA
-Toronto,Canada
-Vancouver,Canada
-Berlin,Germany
-Munich,Germany
-Paris,France
-Lyon,France
-Tokyo,Japan
-Osaka,Japan
-London,United Kingdom
-Manchester,United Kingdom
-Rome,Italy
-Milan,Italy
-Beijing,China
-Shanghai,China
-New Delhi,India
-Mumbai,India
-Sao Paulo,Brazil
-Rio de Janeiro,Brazil
-Mexico City,Mexico
-Guadalajara,Mexico
-Madrid,Spain
-Barcelona,Spain
-Sydney,Australia
-Melbourne,Australia
-Cape Town,South Africa
-Johannesburg,South Africa
-Cairo,Egypt
-Alexandria,Egypt
-Buenos Aires,Argentina
-Moscow,Russia
-Kyiv,Ukraine
-Bangkok,Thailand
-Seoul,South Korea
-Amsterdam,Netherlands
-Athens,Greece
-Lisbon,Portugal
-Istanbul,Turkey
-Warsaw,Poland
-Stockholm,Sweden
-Zurich,Switzerland
-Brussels,Belgium
-Vienna,Austria
-Oslo,Norway
-Copenhagen,Denmark
-Helsinki,Finland
-Dublin,Ireland
-Auckland,New Zealand
-Budapest,Hungary
-Prague,Czech Republic
-Bucharest,Romania
-Santiago,Chile
-Lima,Peru
-Bogota,Colombia
-Caracas,Venezuela
-Quito,Ecuador
-Riyadh,Saudi Arabia
-Tehran,Iran
-Baghdad,Iraq
-Karachi,Pakistan
-Dhaka,Bangladesh
-Ho Chi Minh City,Vietnam
-Manila,Philippines
-Jakarta,Indonesia
-Kuala Lumpur,Malaysia
-Singapore,Singapore
-Yangon,Myanmar
-Kathmandu,Nepal
-Colombo,Sri Lanka
-Kabul,Afghanistan
-Tashkent,Uzbekistan
-Nur-Sultan,Kazakhstan
-Bishkek,Kyrgyzstan
-Dushanbe,Tajikistan
-Ashgabat,Turkmenistan
-Ulaanbaatar,Mongolia
-Pyongyang,North Korea
-Phnom Penh,Cambodia
-Vientiane,Laos
+city_name,country_name,city_area
+New York,USA,4222.47
+Los Angeles,USA,3787.53
+Toronto,Canada,4826.4
+Vancouver,Canada,3663.81
+Berlin,Germany,630.26
+Munich,Germany,2083.78
+Paris,France,4427.79
+Lyon,France,2906.73
+Tokyo,Japan,2828.9
+Osaka,Japan,14.25
+London,United Kingdom,3147.41
+Manchester,United Kingdom,2881.55
+Rome,Italy,3392.88
+Milan,Italy,3411.29
+Beijing,China,3053.14
+Shanghai,China,4233.99
+New Delhi,India,1400.3
+Mumbai,India,4396.18
+Sao Paulo,Brazil,3129.99
+Rio de Janeiro,Brazil,3800.66
+Mexico City,Mexico,778.37
+Guadalajara,Mexico,4699.69
+Madrid,Spain,904.63
+Barcelona,Spain,4542.46
+Sydney,Australia,3682.0
+Melbourne,Australia,2238.39
+Cape Town,South Africa,3524.3
+Johannesburg,South Africa,1994.52
+Cairo,Egypt,2629.39
+Alexandria,Egypt,1491.32
+Buenos Aires,Argentina,4264.29
+Moscow,Russia,2585.98
+Kyiv,Ukraine,2238.84
+Bangkok,Thailand,1414.28
+Seoul,South Korea,577.67
+Amsterdam,Netherlands,4394.33
+Athens,Greece,281.26
+Lisbon,Portugal,2599.52
+Istanbul,Turkey,498.99
+Warsaw,Poland,4646.58
+Stockholm,Sweden,4295.44
+Zurich,Switzerland,2437.97
+Brussels,Belgium,3593.62
+Vienna,Austria,3456.18
+Oslo,Norway,2368.47
+Copenhagen,Denmark,1874.61
+Helsinki,Finland,1261.13
+Dublin,Ireland,1840.97
+Auckland,New Zealand,2677.46
+Budapest,Hungary,2942.33
+Prague,Czech Republic,4124.33
+Bucharest,Romania,18.4
+Santiago,Chile,1015.17
+Lima,Peru,2555.59
+Bogota,Colombia,3263.91
+Caracas,Venezuela,1088.77
+Quito,Ecuador,3272.86
+Riyadh,Saudi Arabia,3374.87
+Tehran,Iran,3043.96
+Baghdad,Iraq,1850.13
+Karachi,Pakistan,116.5
+Dhaka,Bangladesh,2923.56
+Ho Chi Minh City,Vietnam,560.48
+Manila,Philippines,2710.99
+Jakarta,Indonesia,3587.82
+Kuala Lumpur,Malaysia,1623.96
+Singapore,Singapore,4476.33
+Yangon,Myanmar,1024.1
+Kathmandu,Nepal,4953.13
+Colombo,Sri Lanka,1150.95
+Kabul,Afghanistan,1781.13
+Tashkent,Uzbekistan,3325.19
+Nur-Sultan,Kazakhstan,4253.78
+Bishkek,Kyrgyzstan,99.03
+Dushanbe,Tajikistan,1602.35
+Ashgabat,Turkmenistan,1866.97
+Ulaanbaatar,Mongolia,1719.76
+Pyongyang,North Korea,458.26
+Phnom Penh,Cambodia,3719.57
+Vientiane,Laos,113.63
