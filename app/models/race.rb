@@ -3,4 +3,5 @@ class Race < ApplicationRecord
 
   validates :race_name, presence: true
   validates :race_population, presence: true
+  validates :description, presence: true
 end

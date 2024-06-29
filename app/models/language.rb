@@ -3,4 +3,5 @@ class Language < ApplicationRecord
 
   validates :language_name, presence: true
   validates :language_code, presence: true
+  validates :description, presence: true
 end

@@ -44,19 +44,22 @@ end
 
   Language.create!(
     language_name: Faker::Nation.language,
-    language_code: language_code
+    language_code: language_code,
+    description: Faker::Lorem.sentence # 添加描述字段
   )
 end
-# Seed Races with Faker
+
 10.times do
   race_name = Faker::Demographic.race
   race_population = Faker::Number.within(range: 10000..1000000)  # 用于模拟种族人口的随机数值
 
   Race.create!(
     race_name: race_name,
-    race_population: race_population
+    race_population: race_population,
+    description: Faker::Lorem.sentence # 添加描述字段
   )
 end
+
 
 # Seed CountryLanguages with Faker
 Country.all.each do |country|
