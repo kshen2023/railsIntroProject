@@ -9,7 +9,7 @@
     <tr>
       <th>City Name</th>
       <th>Country</th>
-      <th>Population</th>
+      <th>City_Area</th>
     </tr>
   </thead>
   <tbody>
@@ -17,6 +17,7 @@
       <tr>
         <td><%= link_to city.city_name, city_path(city) %></td>
         <td><%= city.country.country_name %></td>
+        <td><%= city.city_area%></td>
       
       </tr>
     <% end %>
