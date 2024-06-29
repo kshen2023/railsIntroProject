@@ -11,12 +11,13 @@ class CitiesController < ApplicationController
 
   def search
     if params[:search].present?
-      @cities = City.where("city_name LIKE ?", "%#{params[:search]}%")
+      @search_term = params[:search]
+      @cities = City.where("city_name LIKE ?", "%#{@search_term}%")
     else
-      @cities = City.all
+      @cities = City.none
     end
 
-    render :index
+    render :search_results
   end
   # Add other actions as needed (e.g., show, new, create, edit, update, destroy)
 end
