@@ -1,26 +1,25 @@
 <!-- app/views/cities/search_results.html.erb -->
 
 <h1>Search Results for "<%= @search_term %>"</h1>
-
 <% if @cities.any? %>
-  <table>
-    <thead>
+<table>
+  <thead>
+    <tr>
+      <th>City Name</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cities.each do |city| %>
       <tr>
-        <th>City Name</th>
-        <th>Country</th>
+        <td><%= link_to city.city_name, city_path(city) %></td>
+        <td><%= city.country.country_name %></td>
       </tr>
-    </thead>
-    <tbody>
-      <% @cities.each do |city| %>
-        <tr>
-          <td><%= link_to city.city_name, city_path(city) %></td>
-          <td><%= city.country.country_name %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+    <% end %>
+  </tbody>
+</table>
 
-  <%= paginate @cities %>
+<%= paginate @cities %>
 <% else %>
   <p>No cities found for "<%= @search_term %>".</p>
 <% end %>
