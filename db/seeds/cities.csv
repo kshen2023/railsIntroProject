@@ -1,81 +1,81 @@
-city_name,country_name,city_area
-New York,USA,4222.47
-Los Angeles,USA,3787.53
-Toronto,Canada,4826.4
-Vancouver,Canada,3663.81
-Berlin,Germany,630.26
-Munich,Germany,2083.78
-Paris,France,4427.79
-Lyon,France,2906.73
-Tokyo,Japan,2828.9
-Osaka,Japan,14.25
-London,United Kingdom,3147.41
-Manchester,United Kingdom,2881.55
-Rome,Italy,3392.88
-Milan,Italy,3411.29
-Beijing,China,3053.14
-Shanghai,China,4233.99
-New Delhi,India,1400.3
-Mumbai,India,4396.18
-Sao Paulo,Brazil,3129.99
-Rio de Janeiro,Brazil,3800.66
-Mexico City,Mexico,778.37
-Guadalajara,Mexico,4699.69
-Madrid,Spain,904.63
-Barcelona,Spain,4542.46
-Sydney,Australia,3682.0
-Melbourne,Australia,2238.39
-Cape Town,South Africa,3524.3
-Johannesburg,South Africa,1994.52
-Cairo,Egypt,2629.39
-Alexandria,Egypt,1491.32
-Buenos Aires,Argentina,4264.29
-Moscow,Russia,2585.98
-Kyiv,Ukraine,2238.84
-Bangkok,Thailand,1414.28
-Seoul,South Korea,577.67
-Amsterdam,Netherlands,4394.33
-Athens,Greece,281.26
-Lisbon,Portugal,2599.52
-Istanbul,Turkey,498.99
-Warsaw,Poland,4646.58
-Stockholm,Sweden,4295.44
-Zurich,Switzerland,2437.97
-Brussels,Belgium,3593.62
-Vienna,Austria,3456.18
-Oslo,Norway,2368.47
-Copenhagen,Denmark,1874.61
-Helsinki,Finland,1261.13
-Dublin,Ireland,1840.97
-Auckland,New Zealand,2677.46
-Budapest,Hungary,2942.33
-Prague,Czech Republic,4124.33
-Bucharest,Romania,18.4
-Santiago,Chile,1015.17
-Lima,Peru,2555.59
-Bogota,Colombia,3263.91
-Caracas,Venezuela,1088.77
-Quito,Ecuador,3272.86
-Riyadh,Saudi Arabia,3374.87
-Tehran,Iran,3043.96
-Baghdad,Iraq,1850.13
-Karachi,Pakistan,116.5
-Dhaka,Bangladesh,2923.56
-Ho Chi Minh City,Vietnam,560.48
-Manila,Philippines,2710.99
-Jakarta,Indonesia,3587.82
-Kuala Lumpur,Malaysia,1623.96
-Singapore,Singapore,4476.33
-Yangon,Myanmar,1024.1
-Kathmandu,Nepal,4953.13
-Colombo,Sri Lanka,1150.95
-Kabul,Afghanistan,1781.13
-Tashkent,Uzbekistan,3325.19
-Nur-Sultan,Kazakhstan,4253.78
-Bishkek,Kyrgyzstan,99.03
-Dushanbe,Tajikistan,1602.35
-Ashgabat,Turkmenistan,1866.97
-Ulaanbaatar,Mongolia,1719.76
-Pyongyang,North Korea,458.26
-Phnom Penh,Cambodia,3719.57
-Vientiane,Laos,113.63
+city_name,country_name,city_area,latitude,longitude
+New York,USA,4222.47,-6.398825,60.969865
+Los Angeles,USA,3787.53,-4.493835,22.160956
+Toronto,Canada,4826.4,41.359473,79.471557
+Vancouver,Canada,3663.81,70.801184,-98.330353
+Berlin,Germany,630.26,-7.171781,113.350311
+Munich,Germany,2083.78,68.69269,-157.84242
+Paris,France,4427.79,-2.430913,-150.226449
+Lyon,France,2906.73,38.122858,-10.048567
+Tokyo,Japan,2828.9,-85.280968,11.585874
+Osaka,Japan,14.25,-34.464165,-43.600859
+London,United Kingdom,3147.41,-1.299386,54.887745
+Manchester,United Kingdom,2881.55,25.458357,156.293133
+Rome,Italy,3392.88,10.67571,-117.68017
+Milan,Italy,3411.29,-24.302319,165.312487
+Beijing,China,3053.14,-86.472831,127.85209
+Shanghai,China,4233.99,5.466716,92.092599
+New Delhi,India,1400.3,-41.466772,100.704607
+Mumbai,India,4396.18,21.039684,-53.796161
+Sao Paulo,Brazil,3129.99,-9.6539,176.873933
+Rio de Janeiro,Brazil,3800.66,-30.043656,-23.42607
+Mexico City,Mexico,778.37,67.169365,171.460432
+Guadalajara,Mexico,4699.69,0.70668,-164.561307
+Madrid,Spain,904.63,-58.390025,104.266707
+Barcelona,Spain,4542.46,-57.301389,-128.845822
+Sydney,Australia,3682.0,15.207945,94.762173
+Melbourne,Australia,2238.39,-18.521138,-165.205923
+Cape Town,South Africa,3524.3,59.935301,-46.623869
+Johannesburg,South Africa,1994.52,-73.209337,-152.471594
+Cairo,Egypt,2629.39,41.741128,17.780622
+Alexandria,Egypt,1491.32,-73.165454,-119.848243
+Buenos Aires,Argentina,4264.29,22.912601,174.277314
+Moscow,Russia,2585.98,28.066263,137.590815
+Kyiv,Ukraine,2238.84,44.629292,-135.673686
+Bangkok,Thailand,1414.28,-69.927945,-78.188729
+Seoul,South Korea,577.67,-13.858506,-7.72581
+Amsterdam,Netherlands,4394.33,17.597041,-2.185045
+Athens,Greece,281.26,-83.726308,43.764922
+Lisbon,Portugal,2599.52,-85.073928,-128.267892
+Istanbul,Turkey,498.99,50.156446,64.372475
+Warsaw,Poland,4646.58,23.721908,-164.622978
+Stockholm,Sweden,4295.44,36.397375,147.938696
+Zurich,Switzerland,2437.97,7.977182,-7.336793
+Brussels,Belgium,3593.62,-82.158063,178.089451
+Vienna,Austria,3456.18,69.075463,-86.389717
+Oslo,Norway,2368.47,-18.134193,159.085416
+Copenhagen,Denmark,1874.61,-48.439533,100.998884
+Helsinki,Finland,1261.13,-45.300973,-51.564372
+Dublin,Ireland,1840.97,-49.569225,-62.112553
+Auckland,New Zealand,2677.46,10.188628,-145.574334
+Budapest,Hungary,2942.33,-65.89486,16.525075
+Prague,Czech Republic,4124.33,85.493522,-64.245898
+Bucharest,Romania,18.4,46.042071,123.198469
+Santiago,Chile,1015.17,43.532162,161.046612
+Lima,Peru,2555.59,-12.315668,-109.591106
+Bogota,Colombia,3263.91,-47.648455,70.724115
+Caracas,Venezuela,1088.77,33.588399,-167.094357
+Quito,Ecuador,3272.86,-34.418177,-81.318269
+Riyadh,Saudi Arabia,3374.87,49.341606,173.1227
+Tehran,Iran,3043.96,-18.127327,-53.358145
+Baghdad,Iraq,1850.13,-25.560276,31.757428
+Karachi,Pakistan,116.5,-21.636078,78.59243
+Dhaka,Bangladesh,2923.56,52.028633,98.562683
+Ho Chi Minh City,Vietnam,560.48,-18.690753,5.872125
+Manila,Philippines,2710.99,-34.533548,13.50721
+Jakarta,Indonesia,3587.82,-85.882291,-66.58065
+Kuala Lumpur,Malaysia,1623.96,63.357909,-105.666356
+Singapore,Singapore,4476.33,50.683102,-122.384046
+Yangon,Myanmar,1024.1,-16.538444,-95.086223
+Kathmandu,Nepal,4953.13,-45.426901,47.184354
+Colombo,Sri Lanka,1150.95,31.48004,-40.202097
+Kabul,Afghanistan,1781.13,-40.46957,-143.001775
+Tashkent,Uzbekistan,3325.19,80.365996,86.994039
+Nur-Sultan,Kazakhstan,4253.78,17.738682,-170.552719
+Bishkek,Kyrgyzstan,99.03,-21.911427,-45.951955
+Dushanbe,Tajikistan,1602.35,-73.21713,-57.230095
+Ashgabat,Turkmenistan,1866.97,20.67821,155.16458
+Ulaanbaatar,Mongolia,1719.76,-25.26119,74.804416
+Pyongyang,North Korea,458.26,71.350357,110.77057
+Phnom Penh,Cambodia,3719.57,-39.420414,-95.871108
+Vientiane,Laos,113.63,-83.281589,62.337206
