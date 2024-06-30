@@ -33,6 +33,8 @@ city_data.each do |row|
   City.create!(
     city_name: row['city_name'],
     city_area: row['city_area'],
+    latitude: row['latitude'],
+    longitude: row['longitude'],
     country: country
   )
 end

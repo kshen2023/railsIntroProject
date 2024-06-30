@@ -7,6 +7,14 @@
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdc5ZNaMVC_7kLF3ZyKRftz64KjB54atA&callback=initMap"></script>
+    <style>
+      /* 设置地图容器的样式 */
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
 </head>
 <body>
   <header>
@@ -22,11 +30,8 @@
       </ul>
     </nav>
   </header>
-
   <div class="container">
     <%= yield %>
   </div>
-
-  
 </body>
 </html>

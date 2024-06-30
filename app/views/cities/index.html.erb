@@ -24,4 +24,27 @@
   </tbody>
 </table>
 
+<div id="map" style="height: 400px;"></div>
 
+<script>
+  document.addEventListener('turbolinks:load', function() {
+    if (document.getElementById('map')) {
+      initMap(<%= raw @city_markers.to_json %>);
+    }
+  });
+
+  function initMap(cityMarkers) {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 2,
+      center: { lat: 0, lng: 0 }
+    });
+
+    cityMarkers.forEach(function(markerInfo) {
+      var marker = new google.maps.Marker({
+        position: { lat: parseFloat(markerInfo.latitude), lng: parseFloat(markerInfo.longitude) },
+        map: map,
+        title: markerInfo.city_name
+      });
+    });
+  }
+</script>
