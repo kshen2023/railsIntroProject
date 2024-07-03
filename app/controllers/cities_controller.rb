@@ -1,6 +1,6 @@
 class CitiesController < ApplicationController
   def index
-    @cities = City.where.not(latitude: nil, longitude: nil).order(:city_name).page(params[:page]).per(10)
+    @cities = City.where.not(latitude: nil, longitude: nil).order(:city_name).page(params[:page])
     @city_markers = @cities.map { |city| { city_name: city.city_name, latitude: city.latitude, longitude: city.longitude } }
     respond_to do |format|
       format.html
