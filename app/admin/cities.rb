@@ -5,14 +5,14 @@ ActiveAdmin.register City do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :city_name, :country_id, :city_area, :latitude, :longitude
-  #
-  # or
-  #
-  # permit_params do
-  #   permitted = [:city_name, :country_id, :city_area, :latitude, :longitude]
-  #   permitted << :other if params[:action] == 'create' && current_user.admin?
-  #   permitted
-  # end
+#   permit_params :city_name, :country_id, :city_area, :latitude, :longitude
+
+#   or
+
+#   permit_params do
+#     permitted = [:city_name, :country_id, :city_area, :latitude, :longitude]
+#     permitted << :other if params[:action] == 'create' && current_user.admin?
+#     permitted
+#   end
 
 end
