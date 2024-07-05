@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 ruby "3.3.0"
+gem 'kaminari'
 gem 'tailwindcss-rails'
 gem 'activeadmin'
 gem "devise"
@@ -39,8 +40,8 @@ gem "jbuilder"
 # Gemfile
 gem 'faker'
 # Gemfile
-gem 'kaminari'
-gem 'will_paginate'
+
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
@@ -73,3 +74,4 @@ group :test do
 end
 
 gem "sassc-rails", "~> 2.1"
+# gem 'kaminari'

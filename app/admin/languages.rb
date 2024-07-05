@@ -5,7 +5,7 @@ ActiveAdmin.register Language do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :language_name, :language_code, :description
+  permit_params :language_name, :language_code, :description
   #
   # or
   #

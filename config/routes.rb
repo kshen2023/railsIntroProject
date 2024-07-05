@@ -24,6 +24,8 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
+
+
   resources :countries
   resources :cities
   resources :languages

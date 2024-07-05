@@ -5,7 +5,7 @@ ActiveAdmin.register City do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-#   permit_params :city_name, :country_id, :city_area, :latitude, :longitude
+  permit_params :city_name, :country_id, :city_area, :latitude, :longitude
 
 #   or
 

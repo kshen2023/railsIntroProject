@@ -15,24 +15,38 @@
         width: 100%;
       }
     </style>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Admin", root_path %></li>
-        <li><%= link_to "About", about_path %></li>
-              <li><%= link_to "Countries", countries_path %></li>
-              <li><%= link_to "Languages", languages_path %></li>
-              <li><%= link_to "Cities", cities_path %></li>
-              <li><%= link_to "Races", races_path %></li>
-        <!-- Add more links as needed -->
-      </ul>
-    </nav>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-lg font-semibold">
+        <%= link_to "Intro Project", root_path, class: "text-blue-500 hover:text-blue-700" %>
+      </div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><%= link_to "Home", root_path, class: "text-blue-500 hover:text-blue-700" %></li>
+          <li><%= link_to "Admin", admin_root_path, class: "text-blue-500 hover:text-blue-700" %></li>
+          <li><%= link_to "About", about_path, class: "text-blue-500 hover:text-blue-700" %></li>
+          <li><%= link_to "Countries", countries_path, class: "text-blue-500 hover:text-blue-700" %></li>
+          <li><%= link_to "Languages", languages_path, class: "text-blue-500 hover:text-blue-700" %></li>
+          <li><%= link_to "Cities", cities_path, class: "text-blue-500 hover:text-blue-700" %></li>
+          <li><%= link_to "Races", races_path, class: "text-blue-500 hover:text-blue-700" %></li>
+          <!-- Add more links as needed -->
+        </ul>
+      </nav>
+    </div>
   </header>
-  <div class="container">
+
+  <main class="container mx-auto px-4 py-8">
     <%= yield %>
-  </div>
+  </main>
+
+  <footer class="bg-white shadow-md py-4 mt-8">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-sm text-gray-600">&copy; 2024 Intro Project. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

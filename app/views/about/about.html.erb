@@ -5,39 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Sources of the Project</title>
   <!-- Add any additional meta tags, stylesheets, or scripts here -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Data Sources of the Project</h1>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4">
+      <h1 class="text-2xl font-semibold text-left text-blue-600">Data Sources of the Project</h1>
+    </div>
+  </header>
 
-  <p>There are 2 data sources used in this project:</p>
+  <main class="container mx-auto px-4 py-8">
+    <ol class="list-decimal space-y-4">
+      <li>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <strong class="text-xl">cities.csv</strong>
+          <ul class="list-disc list-inside ml-5 mt-2">
+            <li><strong>Fields:</strong> city_name, country_name</li>
+            <li><strong>Description:</strong> Contains information about cities including their names and respective countries.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <strong class="text-xl">countries.csv</strong>
+          <ul class="list-disc list-inside ml-5 mt-2">
+            <li><strong>Fields:</strong> country_name, continent, population</li>
+            <li><strong>Description:</strong> Provides details about countries such as their names, continents, and populations.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <strong class="text-xl">Faker</strong>
+          <ul class="list-disc list-inside ml-5 mt-2">
+            <li><strong>Languages and Races: </strong>Faker gem is used to generate synthetic data for</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </main>
 
-  <ol>
-    <li>
-      <strong>cities.csv</strong>
-      <ul>
-        <li><strong>Fields:</strong> city_name, country_name</li>
-        <li><strong>Description:</strong> Contains information about cities including their names and respective countries.</li>
-      </ul>
-    </li>
-    <li>
-      <strong>countries.csv</strong>
-      <ul>
-        <li><strong>Fields:</strong> country_name, continent, population</li>
-        <li><strong>Description:</strong> Provides details about countries such as their names, continents, and populations.</li>
-      </ul>
-    </li>
-  </ol>
-
-  <p>In addition to the CSV files, Faker gem is used to generate synthetic data for other aspects of the project.</p>
-
-  <!-- Optionally, you can include additional sections or details about the project's data sources -->
-
+  <footer class="bg-white shadow-md py-4 mt-8">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-xl font-semibold mb-4">Entity-Relationship Diagram</h3>
+      <%= image_tag('ERD.jpg', alt: 'ERD Diagram', class: 'mx-auto') %>
+    </div>
+  </footer>
 </body>
 </html>
 
-<!-- Add similar sections for other tables (City, Language, Race, etc.) -->
-
-<%# Optional ERD Section %>
-<h3>Entity-Relationship Diagram (ERD)</h3>
-<%= image_tag('ERD.jpg', alt: 'ERD Diagram') %>
-<%# Replace 'erd.png' with your actual ERD image path %>
