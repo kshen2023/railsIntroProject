@@ -10,6 +10,8 @@
       <th>City Name</th>
       <th>Country</th>
       <th>City_Area</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +20,8 @@
         <td><%= link_to city.city_name, city_path(city) %></td>
         <td><%= city.country.country_name %></td>
         <td><%= city.city_area%></td>
+        <td><%= city.latitude%></td>
+        <td><%= city.longitude%></td>
       
       </tr>
     <% end %>
@@ -25,13 +29,13 @@
 </table>
 
 <div id="map" style="height: 400px;"></div>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdc5ZNaMVC_7kLF3ZyKRftz64KjB54atA&callback=initMap" async defer></script>
 <script>
-  document.addEventListener('turbolinks:load', function() {
-    if (document.getElementById('map')) {
-      initMap(<%= raw @city_markers.to_json %>);
-    }
-  });
+  document.addEventListener('DOMContentLoaded', function() {
+  if (document.getElementById('map')) {
+    initMap(<%= raw @city_markers.to_json %>);
+  }
+});
 
   function initMap(cityMarkers) {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -48,3 +52,4 @@
     });
   }
 </script>
+<%= paginate @cities %>
