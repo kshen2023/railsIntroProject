@@ -25,6 +25,11 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :countries do
+    member do
+      patch :upload_image
+    end
+  end
 
   resources :countries
   resources :cities

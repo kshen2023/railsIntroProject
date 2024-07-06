@@ -7,4 +7,21 @@ class CountriesController < ApplicationController
     @cities = @country.cities
     @languages = @country.languages
   end
+
+  def upload_image
+    @country = Country.find(params[:id])
+    if @country.update(country_params)
+      redirect_to @country, notice: 'Image was successfully uploaded.'
+    else
+      @cities = @country.cities
+      @languages = @country.languages
+      render :show
+    end
+  end
+
+  private
+
+  def country_params
+    params.require(:country).permit(:image)
+  end
 end
